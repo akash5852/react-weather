@@ -9,7 +9,7 @@ function App() {
   const [data, setData] = useState('');
   const day = { Name: "", Temp: "", Description: "" };
   //enter an appId
-  const appId = '436752e99bf23ca9371cac6b0b58dd9c';
+  const appId = '';
 
   const getWeather = async () => {
     try {
