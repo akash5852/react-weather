@@ -149,6 +149,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Martin Ivanov - aksha5852@gmail.com
+Akash Sharma - aksha5852@gmail.com
 
 Project Link: [https://github.com/akash5852/react-weather](https://github.com/akash5852/react-weather)
