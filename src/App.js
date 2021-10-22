@@ -7,12 +7,13 @@ import 'bootstrap/dist/js/bootstrap.js';
 function App() {
   const [q, setq] = useState('');
   const [data, setData] = useState('');
-  const day = { Name: "City Name", Temp: "Temperature", Description: "Description" };
-
+  const day = { Name: "", Temp: "", Description: "" };
+  //enter an appId
+  const appId = '436752e99bf23ca9371cac6b0b58dd9c';
 
   const getWeather = async () => {
     try {
-      const res = await Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=`);
+      const res = await Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${appId}`);
       console.log(res);
       day.Name = res.data.name;
       day.Temp = res.data.main.temp + " °C";
