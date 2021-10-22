@@ -8,10 +8,12 @@ function App() {
   const [q, setq] = useState('');
   const [data, setData] = useState('');
   const day = { Temp: "", Description: "" };
-
+  //enter an appId
+  const appId = '';
+  
   const getWeather = async () => {
     try {
-      const res = await Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=436752e99bf23ca9371cac6b0b58dd9c`);
+      const res = await Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${appId}`);
       console.log(res);
       day.Temp = res.data.main.temp;
       day.Description = res.data.weather[0].description;
