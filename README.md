@@ -83,6 +83,7 @@ The purpose of this project was to practice my react skills, as well as practici
 ### Built With
 
 * React
+* Bootstrap
 * CSS
 * Axios
 * Openweathermap API
